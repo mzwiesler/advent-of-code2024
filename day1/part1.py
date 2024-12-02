@@ -13,5 +13,5 @@ def main(path: str) -> int:
 if __name__ == "__main__":
     input_sum_example = main(path="day1/example.txt")
     assert input_sum_example == 11
-    input_sum_input = main(path="day1/day1.txt")
+    input_sum_input = main(path="day1/input.txt")
     print(input_sum_input)
