@@ -1,4 +1,7 @@
-def parse(file_path: str) -> list[str]:
+from typing import List
+
+
+def parse(file_path: str) -> List[str]:
     # Read in the input file as string
     with open(file_path, "r") as f:
         data = f.read()
