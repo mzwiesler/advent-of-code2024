@@ -1,4 +1,4 @@
-from aoc.utils import parse
+from aoc.utils import read_lines
 
 
 def count_xmas_occurrences(grid):
@@ -38,7 +38,7 @@ def count_xmas_occurrences(grid):
 
 
 def main(path: str) -> int:
-    grid = parse(path)
+    grid = read_lines(path)
     return count_xmas_occurrences(grid)
 
 

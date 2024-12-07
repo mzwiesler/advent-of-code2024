@@ -1,14 +1,13 @@
 import re
 from typing import Tuple
 
-from aoc.utils import parse
+from aoc.utils import read_lines
 
 
 def extract_and_multiply(input_string: str, enabled: bool = True) -> Tuple[int, bool]:
     # Define a regex pattern to match valid mul(X,Y) instructions
 
     combined_pattern = re.compile(r"(mul\((\d+),(\d+)\))|(do\(\))|(don\'t\(\))")
-    mul_pattern = re.compile(r"mul\((\d+),(\d+)\)")
     # Find all matches for the combined pattern
     matches = re.finditer(combined_pattern, input_string)
     result = 0
@@ -24,7 +23,7 @@ def extract_and_multiply(input_string: str, enabled: bool = True) -> Tuple[int, 
 
 
 def main(path: str) -> int:
-    lines = parse(path)
+    lines = read_lines(path)
     print(f"Number of lines: {len(lines)}")
     result = []
     enabled = True

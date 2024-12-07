@@ -1,6 +1,4 @@
-from collections import defaultdict, deque
-
-from aoc.utils import parse
+from collections import defaultdict
 
 
 def parse_input(content):

@@ -1,7 +1,7 @@
 import re
 from typing import List, Tuple
 
-from aoc.utils import parse
+from aoc.utils import read_lines
 
 
 def search_pattern(x: int, y: int, grid: List[str], pattern: List[Tuple[int, int]]) -> bool:
@@ -39,7 +39,7 @@ def count_xmas_patterns(grid: List[str]) -> int:
 
 
 def main(path: str) -> int:
-    grid = parse(path)
+    grid = read_lines(path)
     return count_xmas_patterns(grid)
 
 

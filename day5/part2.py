@@ -1,7 +1,5 @@
-from collections import defaultdict, deque
+from collections import defaultdict
 from typing import Dict, List, Set, Tuple
-
-from aoc.utils import parse
 
 
 def parse_input(content: str) -> Tuple[List[str], List[List[int]]]:

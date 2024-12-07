@@ -1,6 +1,6 @@
 import re
 
-from aoc.utils import parse
+from aoc.utils import read_lines
 
 
 def extract_and_multiply(input_string: str) -> int:
@@ -22,7 +22,7 @@ def extract_and_multiply(input_string: str) -> int:
 
 
 def main(path: str) -> int:
-    lines = parse(path)
+    lines = read_lines(path)
     print(f"Number of lines: {len(lines)}")
     result = []
     for line in lines:

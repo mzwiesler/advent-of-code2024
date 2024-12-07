@@ -1,6 +1,6 @@
 import numpy as np
 
-from aoc.utils import parse
+from aoc.utils import read_lines
 
 
 def is_safe(report: list[int]) -> bool:
@@ -14,7 +14,7 @@ def is_safe(report: list[int]) -> bool:
 
 
 def main(path: str) -> int:
-    lines = parse(path)
+    lines = read_lines(path)
     result = []
     for line in lines:
         report = [int(item) for item in line.split(" ")]

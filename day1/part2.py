@@ -1,8 +1,8 @@
-from aoc.utils import parse
+from aoc.utils import read_lines
 
 
 def main(path: str) -> int:
-    lines = parse(path)
+    lines = read_lines(path)
     splitted_lines = [line.split("   ") for line in lines]
     left_list = sorted([int(line[0]) for line in splitted_lines])
     right_list = sorted([int(line[1]) for line in splitted_lines])
